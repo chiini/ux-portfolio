@@ -908,6 +908,25 @@ p { margin: 0; }
   font-weight: 600;
   margin-bottom: 36px;
 }
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.social-icon:hover {
+  transform: translateY(-3px);
+  opacity: 0.75;
+}
+.social-icon img {
+  width: clamp(22px, 5vw, 30px);
+  height: auto;
+}
 
 /* ---------- Footer ---------- */
 .site-footer {
